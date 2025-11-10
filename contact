@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #555;
+      --bg: #fffefc;
+      --surface: #f5f2ef;
+      --maxw: 800px;
+      --accent: #8b5a2b;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Raleway', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; }
+
+    .site-header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--surface); z-index: 10; }
+    .nav { display: flex; justify-content: center; gap: 2rem; padding: 1.1rem 1rem; flex-wrap: wrap; }
+    .nav__link { font-family: 'Raleway', sans-serif; color: var(--text); text-decoration: none; padding: .5rem 1rem; border-radius: .5rem; font-weight: 600; font-size: 1.3rem; letter-spacing: 0.2px; }
+    .nav__link:hover { background: var(--surface); color: var(--accent); }
+
+    .container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; padding-block: 2rem 3rem; }
+
+    .contact-info { text-align: center; font-size: 1.1rem; color: var(--muted); }
+    .contact-info a { color: var(--accent); text-decoration: none; }
+    .contact-info a:hover { text-decoration: underline; }
+    .contact-item { margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav__link" href="about.html">About me</a>
+      <a class="nav__link" href="mywork.html">My work</a>
+      <a class="nav__link" href="contact.html">Contact me</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="contact-info">
+      <div class="contact-item">Email: <a href="mailto:dylanpmccoy@gmail.com">dylanpmccoy@gmail.com</a></div>
+      <div class="contact-item">LinkedIn: <a href="https://www.linkedin.com/in/dylanpmccoy/" target="_blank" rel="noopener">linkedin.com/in/dylanpmccoy</a></div>
+      <!-- If you have a Signal username link, replace the href below with your actual link. -->
+      <div class="contact-item">Signal: <a href="#" title="Signal username">dylanpmccoy.22</a></div>
+    </div>
+  </main>
+</body>
+</html>
