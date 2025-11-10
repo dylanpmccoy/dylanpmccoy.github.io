@@ -16,23 +16,91 @@
       --accent: #8b5a2b;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Raleway', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; }
+    body {
+      margin: 0;
+      font-family: 'Raleway', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
 
-    .site-header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--surface); z-index: 10; }
-    .nav { display: flex; justify-content: center; gap: 2rem; padding: 1.1rem 1rem; flex-wrap: wrap; }
-    .nav__link { font-family: 'Raleway', sans-serif; color: var(--text); text-decoration: none; padding: .5rem 1rem; border-radius: .5rem; font-weight: 600; font-size: 1.3rem; letter-spacing: 0.2px; }
-    .nav__link:hover { background: var(--surface); color: var(--accent); }
+    /* Header / Nav */
+    .site-header {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--surface);
+      z-index: 10;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1.1rem 1rem;
+      flex-wrap: wrap;
+    }
+    .nav__link {
+      font-family: 'Raleway', sans-serif;
+      color: var(--text);
+      text-decoration: none;
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+      letter-spacing: 0.2px;
+    }
+    .nav__link:hover {
+      background: var(--surface);
+      color: var(--accent);
+    }
 
-    .container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; padding-block: 2rem 3rem; }
+    .container {
+      width: min(100% - 2rem, var(--maxw));
+      margin-inline: auto;
+      padding-block: 2rem 3rem;
+    }
 
-    .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-    .work-item { background: var(--surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform .2s ease; }
-    .work-item:hover { transform: translateY(-5px); }
-    .work-item img { width: 100%; height: 200px; object-fit: cover; }
-    .work-item-content { padding: 1rem; }
-    .work-item-content h2 { font-family: 'Source Sans Pro', sans-serif; font-weight: 600; color: var(--accent); font-size: 1.4rem; margin: 0 0 .5rem 0; }
-    .work-item-content p { margin: 0; color: var(--muted); font-size: 1rem; }
-    .work-item a { text-decoration: none; color: inherit; display: block; height: 100%; }
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .work-item {
+      background: var(--surface);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform .2s ease;
+    }
+    .work-item:hover {
+      transform: translateY(-5px);
+    }
+    .work-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .work-item-content {
+      padding: 1rem;
+    }
+    .work-item-content h2 {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 1.4rem;
+      margin: 0 0 .5rem 0;
+    }
+    .work-item-content p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .work-item a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
   </style>
 </head>
 <body>
@@ -46,10 +114,10 @@
 
   <main class="container">
     <section class="work-grid">
-      <!-- NPR -->
+      <!-- NPR civil rights article -->
       <div class="work-item">
         <a href="https://www.npr.org/2025/04/16/nx-s1-5338830/trump-federal-cuts-civil-rights-education-investigations" target="_blank" rel="noopener">
-          <img src="https://media.npr.org/assets/img/2025/04/16/trump-federal-cuts-civil-rights-education-investigations_wide.jpg" alt="Trump federal cuts civil rights education investigations">
+          <img src="images/npr-civil-rights.jpg" alt="Trump's federal cuts stall civil rights education investigations">
           <div class="work-item-content">
             <h2>Trump's federal cuts stall civil rights education investigations</h2>
             <p>NPR</p>
@@ -57,9 +125,10 @@
         </a>
       </div>
 
+      <!-- NPR truancy article -->
       <div class="work-item">
         <a href="https://www.npr.org/2024/07/30/nx-s1-4995740/school-truancy-law-enforcement" target="_blank" rel="noopener">
-          <img src="https://media.npr.org/assets/img/2024/07/30/school-truancy-law-enforcement_wide.jpg" alt="School truancy law enforcement">
+          <img src="images/npr-truancy.jpg" alt="When schools call the cops on kids who miss class">
           <div class="work-item-content">
             <h2>When schools call the cops on kids who miss class</h2>
             <p>NPR</p>
@@ -67,9 +136,10 @@
         </a>
       </div>
 
+      <!-- NPR community college article -->
       <div class="work-item">
         <a href="https://www.npr.org/2024/08/21/nx-s1-4930527/community-college-affordable-bachelors-degree" target="_blank" rel="noopener">
-          <img src="https://media.npr.org/assets/img/2024/08/21/community-college-affordable-bachelors-degree_wide.jpg" alt="Community college affordable bachelors degree">
+          <img src="images/npr-community-college.jpg" alt="How community colleges are offering affordable bachelor’s degrees">
           <div class="work-item-content">
             <h2>How community colleges are offering affordable bachelor’s degrees</h2>
             <p>NPR</p>
@@ -77,10 +147,10 @@
         </a>
       </div>
 
-      <!-- Chalkbeat -->
+      <!-- Chalkbeat hidden dropouts article -->
       <div class="work-item">
         <a href="https://www.chalkbeat.org/indiana/2019/9/17/21109400/hidden-dropouts-how-indiana-schools-can-write-off-struggling-students-as-home-schoolers/" target="_blank" rel="noopener">
-          <img src="https://www.chalkbeat.org/indiana/images/2019/09/17/hidden-dropouts-how-indiana-schools-can-write-off-struggling-students-as-home-schoolers.jpg" alt="Hidden dropouts Indiana schools home schoolers">
+          <img src="images/chalkbeat-hidden-dropouts.jpg" alt="Hidden dropouts: How Indiana schools can write off struggling students as home-schoolers">
           <div class="work-item-content">
             <h2>Hidden dropouts: How Indiana schools can write off struggling students as home-schoolers</h2>
             <p>Chalkbeat Indiana</p>
@@ -88,9 +158,10 @@
         </a>
       </div>
 
+      <!-- Chalkbeat 1000 students article -->
       <div class="work-item">
         <a href="https://www.chalkbeat.org/indiana/2019/11/12/21058445/over-1-000-students-have-left-this-indiana-district-to-home-school-can-it-solve-its-hidden-dropout-p/" target="_blank" rel="noopener">
-          <img src="https://www.chalkbeat.org/indiana/images/2019/11/12/over-1-000-students-have-left-this-indiana-district-to-home-school-can-it-solve-its-hidden-dropout-p.jpg" alt="Indiana district home school hidden dropout">
+          <img src="images/chalkbeat-1000-students.jpg" alt="Over 1,000 students have left this Indiana district to home-school. Can it solve its hidden dropout problem?">
           <div class="work-item-content">
             <h2>Over 1,000 students have left this Indiana district to home-school. Can it solve its hidden dropout problem?</h2>
             <p>Chalkbeat Indiana</p>
@@ -98,10 +169,10 @@
         </a>
       </div>
 
-      <!-- NPR -->
+      <!-- NPR Hawaii special education article -->
       <div class="work-item">
         <a href="https://www.npr.org/2022/04/21/1092343446/special-education-teachers-hawaii" target="_blank" rel="noopener">
-          <img src="https://media.npr.org/assets/img/2022/04/21/special-education-teachers-hawaii_wide.jpg" alt="Special education teachers Hawaii">
+          <img src="images/npr-hawaii-sped.jpg" alt="Why Hawaii can't find enough special education teachers">
           <div class="work-item-content">
             <h2>Why Hawaii can't find enough special education teachers</h2>
             <p>NPR</p>
@@ -109,10 +180,10 @@
         </a>
       </div>
 
-      <!-- WFYI -->
+      <!-- WFYI graduation requirements article -->
       <div class="work-item">
         <a href="https://www.wfyi.org/news/articles/indiana-graduation-requirements-jump-career-training" target="_blank" rel="noopener">
-          <img src="https://www.wfyi.org/news/images/indiana-graduation-requirements-jump-career-training.jpg" alt="Indiana graduation requirements career training">
+          <img src="images/wfyi-graduation-requirements.jpg" alt="Indiana graduation requirements jump-start career training">
           <div class="work-item-content">
             <h2>Indiana graduation requirements jump-start career training</h2>
             <p>WFYI</p>
@@ -120,11 +191,12 @@
         </a>
       </div>
 
+      <!-- WFYI college for all article -->
       <div class="work-item">
         <a href="https://www.wfyi.org/news/articles/indiana-families-are-tired-of-college-for-all-should-high-school-change" target="_blank" rel="noopener">
-          <img src="https://www.wfyi.org/news/images/indiana-families-are-tired-of-college-for-all-should-high-school-change.jpg" alt="Indiana families tired of college for all">
+          <img src="images/wfyi-college-for-all.jpg" alt="Indiana families are tired of ‘college for all.’ Should high school change?">
           <div class="work-item-content">
-            <h2>Indiana families are tired of ‘college for all.’ Should high school change?</h2>
+            <h2>Indiana families are tired of 'college for all.' Should high school change?</h2>
             <p>WFYI</p>
           </div>
         </a>
