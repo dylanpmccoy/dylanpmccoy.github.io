@@ -74,13 +74,14 @@ body {
     grid-template-columns: 320px 1fr;
   }
 
-.about__photo {
+  .about__photo {
     margin: 0;
   }
 
-.about__text {
+  .about__text {
     max-width: 60ch;
   }
+}
 
 .container {
   width: min(100% - 2rem, var(--maxw));
