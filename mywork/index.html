@@ -1,106 +1,12 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My work</title>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Raleway:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --text: #1a1a1a;
-      --muted: #555;
-      --bg: #fffefc;
-      --surface: #f5f2ef;
-      --maxw: 1000px;
-      --accent: #8b5a2b;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Raleway', system-ui, -apple-system, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.65;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      background: var(--bg);
-      border-bottom: 1px solid var(--surface);
-      z-index: 10;
-    }
-    .nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1.1rem 1rem;
-      flex-wrap: wrap;
-    }
-    .nav__link {
-      font-family: 'Raleway', sans-serif;
-      color: var(--text);
-      text-decoration: none;
-      padding: .5rem 1rem;
-      border-radius: .5rem;
-      font-weight: 600;
-      font-size: 1.3rem;
-      letter-spacing: 0.2px;
-    }
-    .nav__link:hover {
-      background: var(--surface);
-      color: var(--accent);
-    }
-
-    .container {
-      width: min(100% - 2rem, var(--maxw));
-      margin-inline: auto;
-      padding-block: 2rem 3rem;
-    }
-
-    .work-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    .work-item {
-      position: relative;
-      background: var(--surface);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform .2s ease;
-    }
-    .work-item:hover {
-      transform: translateY(-5px);
-    }
-    .work-item img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .logo-overlay {
-      position: absolute;
-      top: 0.5rem;
-      left: 0.5rem;
-      width: 5px; /* Previously 80px or larger */
-      height: auto;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 2px;
-      border-radius: 4px;
-    }
-    .work-item-content {
-      padding: 1rem;
-    }
-    .work-item-content h2 {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 600;
-      color: var(--accent);
-      font-size: 1.4rem;
-      margin: 0 0 .5rem 0;
-    }
-  </style>
+  <title>My Work – Dylan Peers McCoy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="site-header">
@@ -114,92 +20,82 @@
   <main class="container">
     <section class="work-grid">
       <div class="work-item">
-        <a href="https://www.npr.org/2025/04/16/nx-s1-5338830/trump-federal-cuts-civil-rights-education-investigations" target="_blank" rel="noopener">
-          <img src="/images/npr-civil-rights.jpg" alt="">
-          <img class="logo-overlay" src="/images/NPR-logo.png" alt="NPR logo">
+        <a href="https://www.npr.org/2025/04/16/nx-s1-5338830/trump-federal-cuts-civil-rights-education-investigations" target="_blank">
+          <img src="/images/trump-federal-cuts-civil-rights-education-investigations.jpg" alt="">
           <div class="work-item-content">
             <h2>Trump's federal cuts stall civil rights education investigations</h2>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="work-item">
-        <a href="https://www.npr.org/2024/07/30/nx-s1-4995740/school-truancy-law-enforcement" target="_blank" rel="noopener">
-          <img src="/images/npr-truancy.jpg" alt="">
-          <img class="logo-overlay" src="/images/NPR-logo.png" alt="NPR logo">
+        <a href="https://www.npr.org/2024/07/30/nx-s1-4995740/school-truancy-law-enforcement" target="_blank">
+          <img src="/images/school-truancy-law-enforcement.jpg" alt="">
           <div class="work-item-content">
-            <h2>He has a badge and a gun — and he investigates school truancy</h2>
+            <h2>When schools call the cops on kids who miss class</h2>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="work-item">
-        <a href="https://www.npr.org/2024/08/21/nx-s1-4930527/community-college-affordable-bachelors-degree" target="_blank" rel="noopener">
-          <img src="/images/npr-community-college.jpg" alt="">
-          <img class="logo-overlay" src="/images/NPR-logo.png" alt="NPR logo">
+        <a href="https://www.npr.org/2024/08/21/nx-s1-4930527/community-college-affordable-bachelors-degree" target="_blank">
+          <img src="/images/community-college-affordable-bachelors-degree.jpg" alt="">
           <div class="work-item-content">
-            <h2>Most community college students plan to get 4-year degrees. Few actually do</h2>
+            <h2>How community colleges are offering affordable bachelor’s degrees</h2>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="work-item">
-        <a href="https://www.chalkbeat.org/indiana/2019/9/17/21109400/hidden-dropouts-how-indiana-schools-can-write-off-struggling-students-as-home-schoolers/" target="_blank" rel="noopener">
-          <img src="/images/chalkbeat-hidden-dropouts.jpg" alt="">
-          <img class="logo-overlay" src="/images/Chalkbeat-logo.png" alt="Chalkbeat logo">
+        <a href="https://www.chalkbeat.org/indiana/2019/9/17/21109400/hidden-dropouts-how-indiana-schools-can-write-off-struggling-students-as-home-schoolers/" target="_blank">
+          <img src="/images/hidden-dropouts-how-indiana-schools-can-write-off-struggling-students-as-home-schoolers.jpg" alt="">
           <div class="work-item-content">
             <h2>Hidden dropouts: How Indiana schools can write off struggling students as home-schoolers</h2>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="work-item">
-        <a href="https://www.chalkbeat.org/indiana/2019/11/12/21058445/over-1-000-students-have-left-this-indiana-district-to-home-school-can-it-solve-its-hidden-dropout-p/" target="_blank" rel="noopener">
-          <img src="/images/chalkbeat-1000-students.jpg" alt="">
-          <img class="logo-overlay" src="/images/Chalkbeat-logo.png" alt="Chalkbeat logo">
+        <a href="https://www.chalkbeat.org/indiana/2019/11/12/21058445/over-1-000-students-have-left-this-indiana-district-to-home-school-can-it-solve-its-hidden-dropout-p/" target="_blank">
+          <img src="/images/over-1-000-students-have-left-this-indiana-district-to-home-school-can-it-solve-its-hidden-dropout-p.jpg" alt="">
           <div class="work-item-content">
             <h2>Over 1,000 students have left this Indiana district to home-school. Can it solve its hidden dropout problem?</h2>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="work-item">
-        <a href="https://www.npr.org/2022/04/21/1092343446/special-education-teachers-hawaii" target="_blank" rel="noopener">
-          <img src="/images/npr-hawaii-sped.jpg" alt="">
-          <img class="logo-overlay" src="/images/NPR-logo.png" alt="NPR logo">
+        <a href="https://www.npr.org/2022/04/21/1092343446/special-education-teachers-hawaii" target="_blank">
+          <img src="/images/special-education-teachers-hawaii.jpg" alt="">
           <div class="work-item-content">
-            <h2>Schools are struggling to hire special education teachers. Hawaii may have found a fix</h2>
+            <h2>Why Hawaii can't find enough special education teachers</h2>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="work-item">
-        <a href="https://www.wfyi.org/news/articles/indiana-graduation-requirements-jump-career-training" target="_blank" rel="noopener">
-          <img src="/images/wfyi-graduation-requirements.jpg" alt="">
-          <img class="logo-overlay" src="/images/WFYI-logo.png" alt="WFYI logo">
+        <a href="https://www.wfyi.org/news/articles/indiana-graduation-requirements-jump-career-training" target="_blank">
+          <img src="/images/indiana-graduation-requirements-jump-career-training.jpg" alt="">
           <div class="work-item-content">
             <h2>Indiana graduation requirements jump-start career training</h2>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="work-item">
-        <a href="https://www.wfyi.org/news/articles/indiana-families-are-tired-of-college-for-all-should-high-school-change" target="_blank" rel="noopener">
-          <img src="/images/wfyi-college-for-all.jpg" alt="">
-          <img class="logo-overlay" src="/images/WFYI-logo.png" alt="WFYI logo">
+        <a href="https://www.wfyi.org/news/articles/indiana-families-are-tired-of-college-for-all-should-high-school-change" target="_blank">
+          <img src="/images/indiana-families-are-tired-of-college-for-all-should-high-school-change.jpg" alt="">
           <div class="work-item-content">
-            <h2>Indiana families are tired of 'college for all.' Should high school change?</h2>
+            <h2>Indiana families are tired of ‘college for all.’ Should high school change?</h2>
+            <p></p>
           </div>
-      <div class="work-item">
-        <a href="https://www.npr.org/2025/09/25/nx-s1-5459934/school-students-disabilities-discipline" target="_blank" rel="noopener">
-          <img src="/images/npr-school-discipline.jpg" alt="">
-          <img class="logo-overlay" src="/images/NPR-logo.png" alt="NPR logo">
-          <div class="work-item-content">
-            <h2>Strict rules can foster calm classrooms. But some students pay the price</h2>
-          </div>
-        </a>
-      </div>
-
         </a>
       </div>
     </section>
