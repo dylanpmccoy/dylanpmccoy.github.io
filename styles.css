@@ -46,7 +46,6 @@ body {
   font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 0.2px;
-  text-transform: capitalize;
 }
 
 .nav__link:hover {
