@@ -53,6 +53,35 @@ body {
   color: var(--accent);
 }
 
+.about {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+.about__photo {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 760px) {
+  .about--split {
+    grid-template-columns: 320px 1fr;
+  }
+
+.about__photo {
+    margin: 0;
+  }
+
+.about__text {
+    max-width: 60ch;
+  }
+
 .container {
   width: min(100% - 2rem, var(--maxw));
   margin-inline: auto;
