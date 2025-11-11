@@ -1,50 +1,12 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About me</title>
-  <!-- Fonts: Kalam (light) for name/subhead; Raleway for body; Source Sans Pro for work tiles later -->
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --text: #1a1a1a;
-      --muted: #555;
-      --bg: #fffefc;
-      --surface: #f5f2ef;
-      --maxw: 980px;
-      --accent: #8b5a2b; /* warm brown */
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Raleway', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; }
-
-    /* Header / Nav */
-    .site-header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--surface); z-index: 10; }
-    .nav { display: flex; justify-content: center; gap: 2rem; padding: 1.1rem 1rem; flex-wrap: wrap; }
-    .nav__link { font-family: 'Raleway', sans-serif; color: var(--text); text-decoration: none; padding: .5rem 1rem; border-radius: .5rem; font-weight: 600; font-size: 1.3rem; letter-spacing: 0.2px; }
-    .nav__link:hover { background: var(--surface); color: var(--accent); }
-
-    /* Container */
-    .container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; padding-block: 1.5rem 3rem; }
-
-    /* About layout */
-    .about { display: grid; gap: 2.5rem; align-items: start; }
-    .about__photo { width: 320px; height: 400px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
-    .about__text p { margin: .6rem 0; color: var(--muted); }
-    .about__text a { color: var(--accent); text-decoration: none; }
-    .about__text a:hover { text-decoration: underline; }
-
-    /* Name + subhead block */
-    .nameblock { display: inline-block; }
-    h1 { font-family: 'Kalam', cursive; font-weight: 300; margin: 0; color: var(--accent); letter-spacing: -0.2px; font-size: 3rem; }
-    .subhead { font-family: 'Kalam', cursive; font-weight: 300; color: var(--muted); font-size: 1.2rem; text-align: right; margin-top: -0.2rem; }
-
-    @media (min-width: 760px) {
-      .about { grid-template-columns: 320px 1fr; align-items: center; }
-      .about__photo { margin: 0; }
-      .about__text { max-width: 60ch; }
-    }
-  </style>
+  <title>About – Dylan Peers McCoy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="site-header">
@@ -54,22 +16,18 @@
       <a class="nav__link" href="/contact/">Contact me</a>
     </nav>
   </header>
+
   <main class="container">
-    <section class="about">
-      <img src="/images/portrait.jpg" alt="Portrait of Dylan Peers McCoy" class="about__photo">
-
-      <div class="about__text">
-        <div class="nameblock">
-          <h1>Dylan Peers McCoy</h1>
-          <div class="subhead">Award-winning investigative journalist</div>
-        </div>
-
+    <h1 style="font-family: 'Kalam', cursive; font-weight: 300; font-size: 3.5rem; margin-bottom: 0.3rem;">Dylan Peers McCoy</h1>
+    <p style="font-family: 'Kalam', cursive; font-weight: 300; font-size: 1.4rem; margin-top: 0;">Award-winning investigative journalist</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; align-items: flex-start; justify-content: center;">
+      <img src="/images/portrait_narrow.jpg" alt="Dylan Peers McCoy" style="max-width: 300px; width: 100%; height: auto; border-radius: 8px;">
+      <div style="text-align: left; max-width: 600px;">
         <p>With more than a decade of reporting experience, I combine data analysis, on-the-ground voices, and policy insight to explain what’s at stake for families and communities. My reporting has prompted Indiana to return schools to local control, increased scrutiny of graduation rates, and exposed how the state violated federal law by allowing people with emergency permits to teach special education. In a recent NPR story, I revealed how a federal investigation into the mistreatment of a rural student with disabilities stalled after the Trump administration cut staff at the U.S. Education Department.</p>
-
         <p>My work has appeared on NPR’s <em>All Things Considered</em>, <em>Morning Edition</em>, <em>Weekend Edition</em>, and in <em>The Atlantic</em>. It has earned honors from the Education Writers Association, National Headliner Awards, Public Media Journalists Association, and Regional Edward R. Murrow Awards.</p>
-
+        <p><a href="mailto:dylanpmccoy@gmail.com">dylanpmccoy@gmail.com</a> | <a href="https://www.linkedin.com/in/dylanpmccoy/" target="_blank" rel="noopener">LinkedIn</a></p>
       </div>
-    </section>
+    </div>
   </main>
 </body>
 </html>
