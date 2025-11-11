@@ -165,11 +165,27 @@ p {
   margin-bottom: 1rem;
 }
 
+.nameblock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns subhead to right edge of name */
+}
+
 h1 {
   font-family: 'Kalam', cursive;
   font-weight: 300;
-  font-size: 3rem;
-  color: var(--accent); /* applies the brown accent color */
-  letter-spacing: -0.2px;
   margin: 0;
+  color: var(--accent);
+  font-size: 3rem;
+  letter-spacing: -0.2px;
+}
+
+.subhead {
+  font-family: 'Kalam', cursive;
+  font-weight: 300;
+  color: var(--muted);
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.2rem; /* Fine-tune alignment if needed */
 }
