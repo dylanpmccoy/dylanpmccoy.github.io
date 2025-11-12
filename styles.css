@@ -147,6 +147,7 @@ body {
   left: 10px;
   width: 10%;
   max-width: 60px;
+  height: auto;
   opacity: 0.9;
   z-index: 2;
 }
